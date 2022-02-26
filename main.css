@@ -8,12 +8,13 @@
 
 .container {
     display:flex;
+    min-height: 100vh;
 }
 
-/*Sidebar CSS START*/
+/*Sidebar START*/
 
 .sidebar {
-    width:20vw;
+    width:18vw;
     background-color:#0ea5e9;
     color:white;
 }
@@ -21,17 +22,17 @@
 .sidebar--logo {
     display:flex;
     gap:1rem;
-    font-size:1.5rem;
+    font-size:1.4rem;
     align-items:center;
  }
 
 .sidebar .sidebar--logo img {
-    height:4rem;
+    height:3rem;
 }
 
 .sidebar--secondarylinks,
 .sidebar--mainlinks {
-    margin-top:50px;
+    margin-top:40px;
 }
 
 .sidebar ul li {
@@ -39,7 +40,7 @@
     display: flex;
     gap: 1rem;
     align-items:center;
-    font-size:2rem;
+    font-size:1.5rem;
     font-weight:500;
     margin-top:10px;
     margin-left:15px;
@@ -50,9 +51,80 @@
 
 }
 
-/*Sidebar CSS END*/
+/*Sidebar END*/
+
+/*Header START*/
+.header {
+    width:80vw;
+}
 
 .header--top,
 .header--bottom {
     display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0;
+}
+
+.header--top--profile,
+.header--bottom--welcomemessage,
+.header--bottom--projectbuttons {
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin:0 30px;
+}
+
+.header img {
+    height:1.7rem;
+}
+.header .usericon{
+    height:3rem;
+    border-radius:300px;
+}
+
+.header--bottom--welcomemessage p,
+.header--top--profile p {
+    font-weight:700;
+}
+
+.username {
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+.header--top--search {
+    display:flex;
+    flex:1;
+    gap:1.5rem;
+    margin-left:30px;
+}
+
+.header--top--search--searchinput {
+    flex:1;
+    border-radius:30px;
+    background-color: #cbd5e1;
+    border:none;
+}
+
+.header--bottom--projectbuttons button {
+    padding:10px;
+    width:90px;
+    background-color:#0ea5e9;
+    border:0px;
+    border-radius:100px;
+    color:white;
+    font-weight:500;
+}
+
+/*Header END*/
+
+/*Main START*/
+
+.content-container {
+    display:flex;
+}
+
+.main {
+    background-color: #cbd5e1;
 }
