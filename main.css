@@ -14,9 +14,10 @@
 /*Sidebar START*/
 
 .sidebar {
-    width:18vw;
     background-color:#0ea5e9;
     color:white;
+    max-width:20vw; /*check this*/
+    padding:10px 30px;
 }
 
 .sidebar--logo {
@@ -54,7 +55,7 @@
 /*Sidebar END*/
 
 /*Header START*/
-.header {
+header {
     width:80vw;
 }
 
@@ -75,10 +76,10 @@
     margin:0 30px;
 }
 
-.header img {
+header img {
     height:1.7rem;
 }
-.header .usericon{
+header .usericon{
     height:3rem;
     border-radius:300px;
 }
@@ -123,8 +124,12 @@
 
 .content-container {
     display:flex;
+    flex-direction:column;
+    width:100%;
 }
 
-.main {
+main {
     background-color: #cbd5e1;
+    display:flex;
+    flex:1;
 }
