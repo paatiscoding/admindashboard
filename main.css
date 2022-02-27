@@ -6,17 +6,19 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.container {
-    display:flex;
-    min-height: 100vh;
+body {
+    display:grid;
+    grid-template-columns: 20vw 2fr 1fr;
+    grid-template-rows:auto 1fr;
+    min-height:100vh;
 }
 
 /*Sidebar START*/
 
 .sidebar {
+    grid-row:1/4;
     background-color:#0ea5e9;
     color:white;
-    max-width:20vw; /*check this*/
     padding:10px 30px;
 }
 
@@ -57,6 +59,7 @@
 /*Header START*/
 header {
     width:80vw;
+    grid-column:2/4;
 }
 
 .header--top,
@@ -65,6 +68,7 @@ header {
     align-items:center;
     justify-content:space-between;
     padding:10px 0;
+    margin-bottom:10px;
 }
 
 .header--top--profile,
@@ -122,14 +126,16 @@ header .usericon{
 
 /*Main START*/
 
-.content-container {
-    display:flex;
-    flex-direction:column;
-    width:100%;
+main {
+    grid-column: 2/3;
+    background-color: #cbd5e1;
 }
 
-main {
-    background-color: #cbd5e1;
-    display:flex;
-    flex:1;
+
+/*Main END*/
+
+/*Aside Start*/
+
+.secondary {
+    grid-column: 3/4;
 }
